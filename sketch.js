@@ -35,7 +35,7 @@ function setup() {
   drop.dragLeave(unhighlight);
   drop.drop(gotFile, unhighlight);
 
-  let bd = select('body');
+  let bd = select('html');
   bd.drop(() => {});
 
   filename = select("#filename");
@@ -53,6 +53,7 @@ function setup() {
 }
 
 function createMarkov(file) {
+  console.log("hi");
   markov = {};
 
   for (let i = 0; i < file.length; i++) {
@@ -93,7 +94,7 @@ function generate() {
 function gotFile(file) {
   let spl = file.name.split('.');
   let ext = spl[spl.length -1];
-  if (ext == 'txt' || ext == 'js') createMarkov(""+file.data);
+  createMarkov(""+file.data);
   filename.html(file.name + " loaded with order "+order);
 }
 
