@@ -12,3 +12,5 @@ Binary files don't work, obviously.
 - Drag and drop an input file into the box. 
 - Select the size of the string to be generated
 - Enter a seed value to begin with, or leave blank to use the start of the file.
+
+[Markov Text Generator](http://mustafaquraish.github.io/Markov_Textgen)
