@@ -53,12 +53,11 @@ function setup() {
 }
 
 function createMarkov(file) {
-  console.log("hi");
   markov = {};
 
-  //for (let i = 0; i < file.length; i++) {
-  //  if (file[i] == '\n') file = file.substring(0,i) + " " + file.substring(i+1);
-  //}
+  for (let i = 0; i < file.length; i++) {
+    if (file[i] == '\n') file = file.substring(0,i) + " " + file.substring(i+1);
+  }
 
   for (let i = 0; i < file.length - order; i++) {
     let v = file.substring(i,i+order);
