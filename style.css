@@ -1,0 +1,33 @@
+html,
+body {
+  text-align: center;
+  background-color: #eee;
+  margin-left:30pt;
+  margin-right:30pt;
+  align-items: center;
+  height: 100%;
+}
+#drop {
+  border-style: dashed;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 20pt;
+  padding-top: 50pt;
+  padding-bottom: 50pt;
+  font-size: 15pt;
+}
+
+#seed {
+  height: 20pt;
+  width: 150pt;
+  padding-left: 5pt;
+}
+
+#ordval {
+  font-family: monospace;
+  font-size: 13pt;
+}
+
+#size {
+  margin-left: 10pt
+}
