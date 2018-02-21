@@ -48,6 +48,7 @@ function setup() {
   btn.mousePressed(generate);
 
   text = createP("");
+  text.style('padding-bottom','80pt');
 
 }
 
