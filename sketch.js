@@ -16,10 +16,10 @@ function setup() {
 
   ordsl = select('#ordsl');
   ordsl.input(() => {
-    ord = ordsl.value();
+    order = ordsl.value();
 
-    if (ord >= 10) select('#ordval').html(ord);
-    else select('#ordval').html("0"+ord)
+    if (order >= 10) select('#ordval').html(order);
+    else select('#ordval').html("0"+order)
   });
 
   sizein = select('#size');
